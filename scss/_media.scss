@@ -1,0 +1,53 @@
+@media only screen and (min-width:768px){
+    #calidadATuMesa {
+        font-size: 1em;
+        text-decoration: none;
+    }
+    #envioSinCargo {
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    .transparencia {
+        padding: 15px;
+        min-width: max-content;
+        
+    }
+}
+
+@media only screen and (min-width:992px){
+    #topbar {
+        height: 5vh;
+        .divTopBar {
+            width: 33vw;
+            text-align: center;
+            a p{
+                display: block;
+                color: white;
+                margin-top: 10px;
+                text-decoration: none;
+            }
+            a img{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1024px){
+    #links2 h3{
+        display: block;
+    }
+    .transparencia {
+        padding: 15px;
+        min-width: max-content;
+        p{
+            font-size: 1.5em;
+        }
+    }
+    #envioSinCargo {
+        font-size: 2em;
+        text-decoration: none;
+    }
+}
+

@@ -1,0 +1,21 @@
+// vars
+
+$mainColor: #005248;
+$secondColor: #e0fffb;
+$black: rgb(22, 21, 21);
+$white: rgb(243, 243, 243);
+
+
+//clases
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+//bg
+
+.bg-verde{
+    background-color: $mainColor;
+}

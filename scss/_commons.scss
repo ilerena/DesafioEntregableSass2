@@ -1,0 +1,257 @@
+
+a{
+    text-decoration: none;
+}
+.indicador {
+    border: black double 6px;
+    background-color: #e0fffb;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    .tituloYFoto {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        .cajaTituloLinks {
+            width: 50%;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .cajaIconoLinks {
+            text-align: center;
+            width: 50%;
+            margin-right: 20px;
+            .iconoLinks {
+                max-width: 50px;
+            }
+        }
+    }
+    .divlink {
+        text-align: center;
+        text-decoration: none;
+        color:#005248;
+        padding: 0 6px;
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    
+    }
+    .divText {
+        font-size: .8em;
+        width: auto;
+        margin: auto;
+        padding: 4px;
+        text-align: center;
+    }
+}
+
+h3{
+    font-size: 1.2em;
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    color: black;
+    border: black solid 2px;
+    border-radius: .7em;
+    padding: 0 6px;
+    &:hover{
+        color: #ffffff;
+        background-color: #005248;
+    }
+}
+h4{
+    margin: 10px 15px;
+}
+
+#irALaTienda1 {
+    font-size: 2em;
+    width: 100%;
+    padding: 4px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    a{
+        color: #ffffff;
+        border-radius: 1em;
+        background-color: #005248;
+        padding: 2px 20px;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+#links2 {
+    width: 100vw;
+    h3{
+        display: none;
+}
+    #cajacompleta {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        #foto1-in {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            #cajaImg1 {
+                position: relative;
+                text-align: center;
+                width: 100%;
+                padding: 0 10px;
+                img{
+                    width: 100%;
+                    border: double black 2px;
+                }
+            }
+            #CajaTransp1 {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                #hola {
+                    width: min-content;
+                    text-align: center;
+                    font-size: 1.1em;
+                    
+                }
+                .transparencia {
+                    background-color:rgba(255, 255, 255, 0.70);
+                    color:#005248;
+                    border-radius: 0.5em;
+                }               
+            }
+        }
+    }
+}
+
+#bannerFinal {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    #divImgBannerFinal {
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    #divTextBannerFinal {
+        position: absolute;
+        width: 70%;
+        text-align: center;
+        background-color: rgba(00, 52, 48, 0.70);
+        &:hover{
+            position: absolute;
+            width: 70%;
+            text-align: center;
+            background-color: rgba(00, 52, 48, 1);
+        }
+        a{
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.70);
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+//page productos
+
+#headerProductos {
+    display: flex;
+    justify-content: center;
+    h2{
+        background-color: #005248;
+        color: #ffffff;
+        margin: 15px 0;
+        padding: 0 10px;
+        border-radius: 1em;
+    }
+}
+
+div {
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 40vw;
+        margin: 10px;
+    }
+}
+#ulBuscar {
+    list-style: none;
+}
+
+//page mayorista 
+
+#headerProductos h2{
+    font-size: 1.3em;
+    .h2Mayorista {
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: solid black 2px;
+        border-radius: 1.5em;
+        background-color: #005248;
+        color: #ffffff;
+    }
+}
+
+#divTextos{
+    padding: 25px;
+    #textMayorista1 {
+        font-size: 1em;
+        padding: 20px 20px;
+        border: solid black 2px;
+        align-items: center;
+        text-align: center;
+        border-radius: .5em;
+        background-color: rgba(00, 52, 48, 0.30);
+        margin: 15px 0;
+    }
+    #textMayorista2 {
+        font-size: 1em;
+        padding: 20px 20px;
+        border: solid black 2px;
+        align-content: center;
+        text-align: center;
+        border-radius: .5em;
+        background-color: rgba(00, 52, 48, 0.30);
+        margin: 15px 0;
+    }
+}
+
+//form contacto
+
+#formContacto {
+    border: double #005248 2px ;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(00, 52, 48, .3);
+    #h2form {
+        background-color: #005248;
+        color: #ffffff;
+        text-align: center;
+        padding: 5px 15px;
+        border-radius: 1em;
+        margin-top: 15px;
+    }
+    #idform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}

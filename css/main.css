@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap");
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.bg-verde {
+  background-color: #005248; }
+
+.fontXS {
+  font-size: 0.5em; }
+
+.fontSM {
+  font-size: 0.8em; }
+
+.fontMD {
+  font-size: 1em; }
+
+.fontLG {
+  font-size: 1.3em; }
+
+.fontXL {
+  font-size: 1.6em; }
+
+.fontXXL {
+  font-size: 2em; }
+
+.fontXXXL {
+  font-size: 3em; }
+
+#topbar {
+  height: 5vh;
+  background-color: #005248;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw; }
+  #topbar .divTopBar {
+    max-height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center; }
+    #topbar .divTopBar a {
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      #topbar .divTopBar a p {
+        display: none;
+        text-decoration: none; }
+    #topbar .divTopBar img {
+      height: 80%; }
+
+.navbar-brand {
+  height: 100%; }
+  .navbar-brand img {
+    max-height: 100px; }
+
+.bg-gradiente {
+  background: linear-gradient(0deg, white 0%, #005248 95%, #005248 100%, #005248 100%); }
+
+.fontLG {
+  font-size: 1.3em; }
+
+#calidadATuMesa {
+  text-decoration: none;
+  font-size: 0.5em;
+  width: max-content;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 52, 48, 0.7);
+  border-radius: 4em; }
+
+a {
+  text-decoration: none; }
+
+.indicador {
+  border: black double 6px;
+  background-color: #e0fffb;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  width: 100%; }
+  .indicador .tituloYFoto {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px; }
+    .indicador .tituloYFoto .cajaTituloLinks {
+      width: 50%;
+      text-align: center;
+      padding-top: 10px; }
+    .indicador .tituloYFoto .cajaIconoLinks {
+      text-align: center;
+      width: 50%;
+      margin-right: 20px; }
+      .indicador .tituloYFoto .cajaIconoLinks .iconoLinks {
+        max-width: 50px; }
+  .indicador .divlink {
+    text-align: center;
+    text-decoration: none;
+    color: #005248;
+    padding: 0 6px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto; }
+  .indicador .divText {
+    font-size: .8em;
+    width: auto;
+    margin: auto;
+    padding: 4px;
+    text-align: center; }
+
+h3 {
+  font-size: 1.2em;
+  text-decoration: none;
+  width: auto;
+  text-align: center;
+  color: black;
+  border: black solid 2px;
+  border-radius: .7em;
+  padding: 0 6px; }
+  h3:hover {
+    color: #ffffff;
+    background-color: #005248; }
+
+h4 {
+  margin: 10px 15px; }
+
+#irALaTienda1 {
+  font-size: 2em;
+  width: 100%;
+  padding: 4px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; }
+  #irALaTienda1 a {
+    color: #ffffff;
+    border-radius: 1em;
+    background-color: #005248;
+    padding: 2px 20px; }
+    #irALaTienda1 a:hover {
+      transform: scale(1.05); }
+
+#links2 {
+  width: 100vw; }
+  #links2 h3 {
+    display: none; }
+  #links2 #cajacompleta {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    #links2 #cajacompleta #foto1-in {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      #links2 #cajacompleta #foto1-in #cajaImg1 {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding: 0 10px; }
+        #links2 #cajacompleta #foto1-in #cajaImg1 img {
+          width: 100%;
+          border: double black 2px; }
+      #links2 #cajacompleta #foto1-in #CajaTransp1 {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center; }
+        #links2 #cajacompleta #foto1-in #CajaTransp1 #hola {
+          width: min-content;
+          text-align: center;
+          font-size: 1.1em; }
+        #links2 #cajacompleta #foto1-in #CajaTransp1 .transparencia {
+          background-color: rgba(255, 255, 255, 0.7);
+          color: #005248;
+          border-radius: 0.5em; }
+
+#bannerFinal {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  align-items: center; }
+  #bannerFinal #divImgBannerFinal {
+    position: relative; }
+    #bannerFinal #divImgBannerFinal img {
+      width: 100%; }
+  #bannerFinal #divTextBannerFinal {
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    background-color: rgba(0, 52, 48, 0.7); }
+    #bannerFinal #divTextBannerFinal:hover {
+      position: absolute;
+      width: 70%;
+      text-align: center;
+      background-color: #003430; }
+    #bannerFinal #divTextBannerFinal a {
+      font-size: 1em;
+      color: rgba(255, 255, 255, 0.7); }
+      #bannerFinal #divTextBannerFinal a:hover {
+        color: #f3f3f3; }
+
+#headerProductos {
+  display: flex;
+  justify-content: center; }
+  #headerProductos h2 {
+    background-color: #005248;
+    color: #ffffff;
+    margin: 15px 0;
+    padding: 0 10px;
+    border-radius: 1em; }
+
+div .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+div .card {
+  max-width: 40vw;
+  margin: 10px; }
+
+#ulBuscar {
+  list-style: none; }
+
+#headerProductos h2 {
+  font-size: 1.3em; }
+  #headerProductos h2 .h2Mayorista {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid black 2px;
+    border-radius: 1.5em;
+    background-color: #005248;
+    color: #ffffff; }
+
+#divTextos {
+  padding: 25px; }
+  #divTextos #textMayorista1 {
+    font-size: 1em;
+    padding: 20px 20px;
+    border: solid black 2px;
+    align-items: center;
+    text-align: center;
+    border-radius: .5em;
+    background-color: rgba(0, 52, 48, 0.3);
+    margin: 15px 0; }
+  #divTextos #textMayorista2 {
+    font-size: 1em;
+    padding: 20px 20px;
+    border: solid black 2px;
+    align-content: center;
+    text-align: center;
+    border-radius: .5em;
+    background-color: rgba(0, 52, 48, 0.3);
+    margin: 15px 0; }
+
+#formContacto {
+  border: double #005248 2px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 52, 48, 0.3); }
+  #formContacto #h2form {
+    background-color: #005248;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 1em;
+    margin-top: 15px; }
+  #formContacto #idform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px; }
+
+#footer {
+  width: 100vw; }
+  #footer #footer1 {
+    width: 100%; }
+    #footer #footer1 #footer1div1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #footer #footer1 #footer1div1 img {
+        max-width: 30vw;
+        padding: 5px 10px; }
+      #footer #footer1 #footer1div1 ul {
+        list-style: none;
+        text-align: center;
+        padding: 0 15px; }
+    #footer #footer1 #footer1div2 {
+      width: 100%;
+      display: none; }
+      #footer #footer1 #footer1div2 .divform h2 {
+        text-align: center;
+        font-size: 1.5em;
+        padding-top: 10px;
+        text-decoration: underline; }
+  #footer #nav2 {
+    border: solid #161515 2px;
+    padding: 0 0; }
+    #footer #nav2 img {
+      display: none; }
+    #footer #nav2 #botones2 {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: center; }
+      #footer #nav2 #botones2 li {
+        margin: 0 5px; }
+      #footer #nav2 #botones2 p {
+        color: #ffffff;
+        text-align: center;
+        font-size: .8em; }
+
+#copyright {
+  width: 100%;
+  height: 15px;
+  font-size: .5em;
+  text-align: center; }
+
+@media only screen and (min-width: 768px) {
+  #calidadATuMesa {
+    font-size: 1em;
+    text-decoration: none; }
+  #envioSinCargo {
+    font-size: 1.5em;
+    text-decoration: none; }
+  .transparencia {
+    padding: 15px;
+    min-width: max-content; } }
+
+@media only screen and (min-width: 992px) {
+  #topbar {
+    height: 5vh; }
+    #topbar .divTopBar {
+      width: 33vw;
+      text-align: center; }
+      #topbar .divTopBar a p {
+        display: block;
+        color: white;
+        margin-top: 10px;
+        text-decoration: none; }
+      #topbar .divTopBar a img {
+        display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  #links2 h3 {
+    display: block; }
+  .transparencia {
+    padding: 15px;
+    min-width: max-content; }
+    .transparencia p {
+      font-size: 1.5em; }
+  #envioSinCargo {
+    font-size: 2em;
+    text-decoration: none; } }

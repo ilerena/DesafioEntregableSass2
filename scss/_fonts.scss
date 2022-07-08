@@ -1,0 +1,38 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+//Vars fonts
+$mainFont: "roboto", sans-serif;
+$secondFont: "Raleway", sans-serif;
+
+//sizes 
+$textXS: 0.5em;
+$textSM: 0.8em;
+$textMD: 1em;
+$textLG: 1.3em;
+$textXL: 1.6em;
+$textXXL: 2em;
+$textXXXL: 3em;
+
+//clases
+.fontXS {
+    font-size: $textXS;
+}
+.fontSM {
+    font-size: $textSM;
+}
+.fontMD {
+    font-size: $textMD;
+}
+.fontLG {
+    font-size: $textLG;
+}
+.fontXL {
+    font-size: $textXL;
+}
+.fontXXL {
+    font-size: $textXXL;
+}
+.fontXXXL {
+    font-size: $textXXXL;
+}
