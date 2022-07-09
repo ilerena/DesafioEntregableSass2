@@ -61,6 +61,9 @@
 .fontLG {
   font-size: 1.3em; }
 
+.vw100 {
+  width: 100vw; }
+
 #calidadATuMesa {
   text-decoration: none;
   font-size: 0.5em;
@@ -229,36 +232,30 @@ div .card {
 
 #headerProductos h2 {
   font-size: 1.3em; }
-  #headerProductos h2 .h2Mayorista {
-    font-size: 1.2em;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: solid black 2px;
-    border-radius: 1.5em;
-    background-color: #005248;
-    color: #ffffff; }
+
+#headerProductos .h2Mayorista {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid black 2px;
+  border-radius: 1.5em;
+  background-color: #005248;
+  color: #ffffff; }
 
 #divTextos {
-  padding: 25px; }
-  #divTextos #textMayorista1 {
+  width: 100vw;
+  display: flex;
+  flex-direction: column; }
+  #divTextos .textMayorista1, #divTextos .textMayorista2 {
     font-size: 1em;
-    padding: 20px 20px;
+    padding: 10px 10px;
     border: solid black 2px;
     align-items: center;
     text-align: center;
     border-radius: .5em;
     background-color: rgba(0, 52, 48, 0.3);
-    margin: 15px 0; }
-  #divTextos #textMayorista2 {
-    font-size: 1em;
-    padding: 20px 20px;
-    border: solid black 2px;
-    align-content: center;
-    text-align: center;
-    border-radius: .5em;
-    background-color: rgba(0, 52, 48, 0.3);
-    margin: 15px 0; }
+    margin: 15px 15px; }
 
 #formContacto {
   border: double #005248 2px;
@@ -352,7 +349,15 @@ div .card {
         margin-top: 10px;
         text-decoration: none; }
       #topbar .divTopBar a img {
-        display: none; } }
+        display: none; }
+  #divTextos {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box; }
+    #divTextos .textMayorista1, #divTextos .textMayorista2 {
+      width: 45vw; } }
 
 @media only screen and (min-width: 1024px) {
   #links2 h3 {

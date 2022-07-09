@@ -31,8 +31,17 @@
             }
         }
     }
+#divTextos{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    .textMayorista1, .textMayorista2{
+        width: 45vw;
+    }
 }
-
+}
 
 @media only screen and (min-width:1024px){
     #links2 h3{
