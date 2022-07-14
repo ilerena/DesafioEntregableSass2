@@ -70,6 +70,15 @@
     #topbar .divTopBar img {
       height: 80%; }
 
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.bg-verde {
+  background-color: #005248; }
+
 .navbar-brand {
   height: 100%; }
   .navbar-brand img {
@@ -83,6 +92,19 @@
 
 .vw100 {
   width: 100vw; }
+
+li {
+  color: #f3f3f3;
+  font-family: "roboto";
+  font-size: 1.3em;
+  line-height: 1;
+  color: #f3f3f3;
+  margin: 0 15px;
+  padding: 0 0; }
+  li:hover {
+    background-color: #005248;
+    transform: scale(1.1);
+    transition: transform .3s ease; }
 
 #calidadATuMesa {
   text-decoration: none;
@@ -124,6 +146,25 @@
 
 .bg-verde {
   background-color: #005248; }
+
+.btnlink1, .btnlink2 {
+  font-size: 2em;
+  width: 100%;
+  padding: 4px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; }
+  .btnlink1 a, .btnlink2 a {
+    color: #ffffff;
+    border-radius: 1em;
+    background-color: #005248;
+    padding: 2px 20px; }
+    .btnlink1 a:hover, .btnlink2 a:hover {
+      transform: scale(1.05); }
+
+.btnlink2 a {
+  font-size: 1.3em;
+  padding: 2px 60px; }
 
 a {
   text-decoration: none; }
@@ -264,6 +305,15 @@ h4 {
 
 .boxshadow {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; }
+
+.boxshadow2 {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; }
+
+.boxshadow3 {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+
+.boxshadow4 {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
 
 div .card-body {
   display: flex;

@@ -1,3 +1,4 @@
+@import "vars";
 
 .navbar-brand{ 
     height: 100%;
@@ -13,4 +14,16 @@
 }
 .vw100 {
     width: 100vw;
+}
+
+li{
+    color:$white;
+    @include text("roboto",$textLG,1,$white);
+    @include MP(0 15px, 0 0);
+
+    &:hover{
+        background-color: $mainColor;
+        transform: scale(1.1);
+        transition: transform .3s ease;
+    }     
 }
