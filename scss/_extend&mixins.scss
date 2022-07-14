@@ -1,0 +1,63 @@
+//extend
+
+.btnlink1 {
+    font-size: 2em;
+    width: 100%;
+    padding: 4px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    a{
+        color: #ffffff;
+        border-radius: 1em;
+        background-color: #005248;
+        padding: 2px 20px;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+.btnlink2 {
+    @extend .btnlink1;
+    a{
+        font-size: $textLG;
+        padding: 2px 60px;
+    }
+}
+
+
+//mixins
+
+@mixin flex($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin text($family,$size,$height,$color){
+    font-family: $family;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin MP($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin wh($width,$height){
+    width: $width;
+    height: $height;
+}
+
+//maps
+
+$boxshadows:(
+    "uno": (rgba(0, 0, 0, 0.25) 0px 25px 50px -12px),
+    "dos": (rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset),
+    "tres": (rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset),
+);
+

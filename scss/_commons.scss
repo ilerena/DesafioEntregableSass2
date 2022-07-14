@@ -1,3 +1,5 @@
+@import "_fonts";
+@import "_vars";
 
 a{
     text-decoration: none;
@@ -64,24 +66,6 @@ h4{
     margin: 10px 15px;
 }
 
-#irALaTienda1 {
-    font-size: 2em;
-    width: 100%;
-    padding: 4px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    a{
-        color: #ffffff;
-        border-radius: 1em;
-        background-color: #005248;
-        padding: 2px 20px;
-        &:hover{
-            transform: scale(1.05);
-        }
-    }
-}
-
 #links2 {
     width: 100vw;
     h3{
@@ -92,10 +76,8 @@ h4{
         display: flex;
         flex-direction: row;
         #foto1-in {
+            @include flex(row,center,center)
             width: 33%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             position: relative;
             #cajaImg1 {
                 position: relative;
@@ -109,10 +91,8 @@ h4{
             }
             #CajaTransp1 {
                 position: absolute;
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: center;
+                @include wh(100%,auto)
+                @include flex(row,center,center)
                 #hola {
                     width: min-content;
                     text-align: center;
@@ -130,11 +110,9 @@ h4{
 }
 
 #bannerFinal {
-    display: flex;
+    @include flex(row, center, center);
     position: relative;
     width: 100vw;
-    justify-content: center;
-    align-items: center;
     #divImgBannerFinal {
         position: relative;
         img{
@@ -165,22 +143,21 @@ h4{
 //page productos
 
 #headerProductos {
-    display: flex;
-    justify-content: center;
+    @include flex(row, center, center);
     h2{
+        @include MP(15px 0,0 10px);
+        @include text("roboto",$textXXL, 1.5,$white);
         background-color: #005248;
-        color: #ffffff;
-        margin: 15px 0;
-        padding: 0 10px;
         border-radius: 1em;
     }
 }
 
+.boxshadow {
+    box-shadow: map-get($map: $boxshadows, $key:uno)
+}
 div {
     .card-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, center, center);
     }
     .card {
         max-width: 40vw;
@@ -194,9 +171,6 @@ div {
 //page mayorista 
 
 #headerProductos {
-    h2{
-    font-size: 1.3em;
-    }
     .h2Mayorista {
         font-size: 1.2em;
         text-align: center;

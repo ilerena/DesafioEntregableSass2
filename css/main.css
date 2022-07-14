@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap");
 .relative {
   position: relative; }
 
@@ -28,6 +29,25 @@
 
 .fontXXXL {
   font-size: 3em; }
+
+.btnlink1, .btnlink2 {
+  font-size: 2em;
+  width: 100%;
+  padding: 4px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; }
+  .btnlink1 a, .btnlink2 a {
+    color: #ffffff;
+    border-radius: 1em;
+    background-color: #005248;
+    padding: 2px 20px; }
+    .btnlink1 a:hover, .btnlink2 a:hover {
+      transform: scale(1.05); }
+
+.btnlink2 a {
+  font-size: 1.3em;
+  padding: 2px 60px; }
 
 #topbar {
   height: 5vh;
@@ -74,6 +94,36 @@
   color: rgba(255, 255, 255, 0.85);
   background-color: rgba(0, 52, 48, 0.7);
   border-radius: 4em; }
+
+.fontXS {
+  font-size: 0.5em; }
+
+.fontSM {
+  font-size: 0.8em; }
+
+.fontMD {
+  font-size: 1em; }
+
+.fontLG {
+  font-size: 1.3em; }
+
+.fontXL {
+  font-size: 1.6em; }
+
+.fontXXL {
+  font-size: 2em; }
+
+.fontXXXL {
+  font-size: 3em; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.bg-verde {
+  background-color: #005248; }
 
 a {
   text-decoration: none; }
@@ -130,21 +180,6 @@ h3 {
 h4 {
   margin: 10px 15px; }
 
-#irALaTienda1 {
-  font-size: 2em;
-  width: 100%;
-  padding: 4px;
-  margin: 10px 0;
-  display: flex;
-  justify-content: center; }
-  #irALaTienda1 a {
-    color: #ffffff;
-    border-radius: 1em;
-    background-color: #005248;
-    padding: 2px 20px; }
-    #irALaTienda1 a:hover {
-      transform: scale(1.05); }
-
 #links2 {
   width: 100vw; }
   #links2 h3 {
@@ -154,10 +189,11 @@ h4 {
     display: flex;
     flex-direction: row; }
     #links2 #cajacompleta #foto1-in {
-      width: 33%;
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
+      width: 33%;
       position: relative; }
       #links2 #cajacompleta #foto1-in #cajaImg1 {
         position: relative;
@@ -172,7 +208,9 @@ h4 {
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: center; }
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
         #links2 #cajacompleta #foto1-in #CajaTransp1 #hola {
           width: min-content;
           text-align: center;
@@ -184,10 +222,11 @@ h4 {
 
 #bannerFinal {
   display: flex;
-  position: relative;
-  width: 100vw;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  width: 100vw; }
   #bannerFinal #divImgBannerFinal {
     position: relative; }
     #bannerFinal #divImgBannerFinal img {
@@ -210,17 +249,26 @@ h4 {
 
 #headerProductos {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
   #headerProductos h2 {
-    background-color: #005248;
-    color: #ffffff;
     margin: 15px 0;
     padding: 0 10px;
+    font-family: "roboto";
+    font-size: 2em;
+    line-height: 1.5;
+    color: #f3f3f3;
+    background-color: #005248;
     border-radius: 1em; }
+
+.boxshadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; }
 
 div .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
 
 div .card {
@@ -229,9 +277,6 @@ div .card {
 
 #ulBuscar {
   list-style: none; }
-
-#headerProductos h2 {
-  font-size: 1.3em; }
 
 #headerProductos .h2Mayorista {
   font-size: 1.2em;
